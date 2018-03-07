@@ -1,5 +1,16 @@
 all : test docs
 
+setup-js:
+	@echo "$@ not yet implemented"
+
+setup-py:
+	@echo "$@ not yet implemented"
+
+setup-r:
+	@echo "$@ not yet implemented"
+
+setup: setup-js setup-py setup-r
+
 
 test-js:
 	@echo "$@ not yet implemented"
