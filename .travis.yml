@@ -24,7 +24,7 @@ addons:
 before_install:
   - npm install stencila/node
   - pip install --user https://github.com/stencila/py/archive/master.zip
-  - Rscript -e "devtools::install_github('stencila/r')"
+  - Rscript -e "install.packages('devtools'); devtools::install_github('stencila/r')"
 
 install:
   - make setup
