@@ -1,22 +1,22 @@
 # library-template
 
 This repository is a template for creating [Stencila][stencila-site]-compatible libraries.
-We recommend using this template to anyone who would like to make their functions for data
-manipulation available in Stencila. You can think of this template as a part of Stencila API.
+We recommend using this template to anyone who would like to create a library for making
+their functions for available in Stencila. You can think of this template as a part of Stencila API.
 
 1.  Please *do not fork this repository directly on GitHub.*
     Instead, please use GitHub's importer following [the instructions below](#creating-your-repository).
 
 2.  Please *do your work in your repository's `master` branch*,
     the documentation for your library will be 
-    automatically published as a website by GitHub from the `doc` folder.
+    automatically published as a website by GitHub from the `docs` folder.
 
 3.  Once you are done, please also [let us know][contact] and send us the link to your 
 library repository so that we can register it with Stencila and make it available to 
 researchers worldwide!
 
 
-## Creating Your Repository
+## Creating your repository
 
 1.  Log in to GitHub.
     (If you do not have an account, you can quickly create one for free.)
@@ -25,20 +25,20 @@ researchers worldwide!
 2.  Go to [GitHub's importer][importer].
 
 3.  Paste the url of this repo as the old repository to clone:
-    <https://github.com/stencila/library-template>.
+    <https://github.com/stencila/libtemplate>.
 
 4.  Select the owner for your new repository.
     (This will probably be you, but may instead be an organization you belong to.)
 
 5.  Choose a name for your library repository.
-    For example, `lib-genomics`, `lib-ecology` and so on.
+    For example, `libgenomics`, `libecology` and so on.
 
 6.  Make sure the repository is public.
 
 7.   You can now click "Begin Import".
     When the process is done,
     you will receive a message like
-    "Importing complete! Your new repository apawlik/lib-genomics is ready."
+    "Importing complete! Your new repository apawlik/libgenomics is ready."
     and you can go to the new repository by clicking on the name.
 
 **Note:**
@@ -52,14 +52,14 @@ please [get in touch](#help).
 
 **Adding your libraries directly via GitHub interface**
 
-1.  Go into your newly-created repository,
-    which will be at `https://github.com/your_username/lib-domain`.
+1.  Go to your newly-created repository,
+    which will be at `https://github.com/<yourusername>/lib<domain>`.
     For example,
     if your username is `apawlik`,
-    the repository's URL will be `https://github.com/apawlik/lib-genomics`.
+    the repository's URL will be `https://github.com/apawlik/libgenomics`.
 
-2.  Have a look into the `function` subdirectory. It contains templates for
-functions in different languages (`function.R`, `function,py`, `function.js` and so on).
+2.  Have a look into the `funcs` subdirectory. It contains templates for
+functions in different languages (e.g. `hello.R`, `hello.py`, `hello.js` and so on).
 Pick the template for the language your libraries are written in. Copy the contents of the template.
 
 3. In the top right click the button "Create new file". This will open the editor on your screen.
@@ -67,14 +67,13 @@ Paste in the contents you copied from the template in. You need to give the file
 you will see the small text box at the top of the editor. Please provide a meaningful name such as:
 `pearson.R` or `extract_counts.py` (note that you need to provide the correct extension!).
 
-4. To write tests for your function, go to the `function` subdirectory. It contains templates for
-function tests in different languages (`function-test.R`, `function-test,py`, `function-test.js` and so on).
+4. To write tests for your function, go to the `tests` subdirectory. It contains templates for
+function tests in different languages (`hello.R`, `hello.py`, `hello.js` and so on).
 Pick the relevant template and copy its contents.
 
 5. In the top right click the button "Create new file". This will open the editor on your screen.
 Paste in the contents you copied from the test template in. You need to give the file you created a name -
-you will see the small text box at the top of the editor. Please provide a meaningful name such as:
-`test_pearson.R` or `test_extract_counts.py` (note that you need to provide the correct extension!).
+you will see the small text box at the top of the editor.
 
 **Adding your libraries in local repository**
 

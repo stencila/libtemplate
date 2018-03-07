@@ -7,12 +7,13 @@
 #' @return Description of the return value
 #'
 #' @examples
-#' func1(1,2)
+#' hello("world")
+#' hello("Anne", "!")
 #'
-#' @seealso func2, func3
+#' @seealso another_func, and_another_func
 #'
 #' @author Anne Appleby
 #' @author Barry Barsden
-func1 <- function(param1 = "world", param2 = "!") {
-  paste0("Hello ", param1, param2)
+hello <- function(param1 = "world", param2 = ".") {
+  paste0("Hello ", param1, " from R", param2)
 }
